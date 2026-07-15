@@ -44,7 +44,7 @@ news_data = fetch_middle_east_news(api_key)
 
 # 기본 변수 초기값 설정
 q4_default = False
-if "Hormuz" in news_data and ("shot" in news_content or "clash" in news_data or "missile" in news_data):
+if "Hormuz" in news_data and ("shot" in news_data or "clash" in news_data or "missile" in news_data):
     q4_default = True
     st.sidebar.warning("🚨 API 연동 결과: 호르무즈 해협 오인 사격/분쟁 징후 실시간 감지! (Q4 변수 자동 활성화)")
 
